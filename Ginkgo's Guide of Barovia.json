@@ -390,6 +390,279 @@
 				"constitution",
 				"wisdom"
 			]
-		}
+		},
+		{
+      "name": "Cavaliere della Nebbia",
+      "source": "GinkgosGuideofBarovia",
+      "size": [
+        "M"
+      ],
+      "type": "undead",
+      "alignment": [
+        {
+          "special": "segue la volontà di Strahd"
+        }
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "armatura a piastre arrugginita"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "14d8 + 42",
+        "average": 105
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 10,
+      "con": 17,
+      "int": 13,
+      "wis": 14,
+      "cha": 16,
+      "save": {
+        "str": "+7",
+        "con": "+6",
+        "wis": "+5"
+      },
+      "skill": {
+        "perception": "+5",
+        "athletics": "+7"
+      },
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 15,
+      "languages": [
+        "Common"
+      ],
+      "cr": "7",
+      "trait": [
+        {
+          "name": "Ritorno dalla Morte",
+          "entries": [
+            "Se il cavaliere viene ridotto a 0 punti ferita e il suo corpo non viene distrutto dal fuoco o dalla magia sacra, risorge entro 24 ore con tutti i suoi punti ferita nella stessa location."
+          ]
+        },
+        {
+          "name": "Paladino di Strahd",
+          "entries": [
+            "Il cavaliere è vincolato ai voleri del Conte. Può solo Scattare, Disimpegnarsi o Schivare quando montato sul suo {@creature Destriero della Nebbia|GinkgosGuideofBarovia}."
+          ]
+        },
+        {
+          "name": "Lama Spettrale",
+          "entries": [
+            "Gli attacchi con armi del cavaliere sono magici."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattacco",
+          "entries": [
+            "Il cavaliere effettua due attacchi con la Lancia della Nebbia."
+          ]
+        },
+        {
+          "name": "Lancia della Nebbia",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage più 7 ({@damage 2d6}) cold damage. Se il bersaglio è una creatura, deve superare un {@dc 14} tiro salvezza su Forza o essere {@condition prone}."
+          ]
+        },
+        {
+          "name": "Ingiunzione di Strahd (ricarica dopo un riposo lungo)",
+          "entries": [
+            "Il cavaliere pronuncia le parole del Conte in una voce piatta e senza vita. Ogni creatura entro 30 piedi che può sentirlo deve superare un {@dc 14} tiro salvezza su Saggezza o essere {@condition frightened} fino alla fine del suo prossimo turno."
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Scudo della Nebbia",
+          "entries": [
+            "Quando il cavaliere o il suo destriero subiscono un colpo critico, il cavaliere può usare la sua reazione per trasformare l'attacco in un colpo normale."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Rejuvenation"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "P",
+        "C"
+      ],
+      "conditionInflict": [
+        "prone",
+        "frightened"
+      ],
+      "savingThrowForced": [
+        "strength",
+        "wisdom"
+      ],
+      "token": {
+        "name": "Revenant",
+        "source": "MM"
+      },
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              "I Cavalieri della Nebbia sono i resti animati di guerrieri che Strahd ha corrotto nel corso dei secoli. Non parlano se non per trasmettere i voleri del Conte, e la loro armatura sembra essere cresciuta dalla nebbia stessa. Quando un cavaliere cade, gli altri non si scompongono — eseguono ordini, non provano emozioni. Tuttavia, chi li osserva attentamente potrebbe scorgere, in uno dei più giovani, una breve esitazione prima di obbedire."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Destriero della Nebbia",
+      "source": "GinkgosGuideofBarovia",
+      "size": [
+        "L"
+      ],
+      "type": "undead",
+      "alignment": [
+        {
+          "special": "segue la volontà di Strahd"
+        }
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "barding naturale"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "6d10 + 12",
+        "average": 45
+      },
+      "speed": {
+        "walk": 60
+      },
+      "str": 18,
+      "dex": 12,
+      "con": 14,
+      "int": 3,
+      "wis": 12,
+      "cha": 7,
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        },
+        "cold"
+      ],
+      "immune": [
+        "poison"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "poisoned"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 11,
+      "cr": "1",
+      "trait": [
+        {
+          "name": "Cavalcatura da Guerra",
+          "entries": [
+            "Quando il Destriero della Nebbia ha un cavaliere a bordo, può usare la sua azione di bonus per effettuare un attacco con gli Zoccoli Spettrali. Nella terminologia delle regole sul combattimento montato, è sempre considerato una cavalcatura controllata."
+          ]
+        },
+        {
+          "name": "Nebbia Persistente",
+          "entries": [
+            "Il destriero non lascia tracce. Non può essere tracciato per mezzo non magico. Appare e scompare nella nebbia di Barovia a discrezione del DM."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Zoccoli Spettrali",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage più 3 ({@damage 1d6}) cold damage. Se il bersaglio è una creatura, deve superare un {@dc 13} tiro salvezza su Forza o essere {@condition prone}."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Mounted Warrior"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "damageTags": [
+        "B",
+        "C"
+      ],
+      "conditionInflict": [
+        "prone"
+      ],
+      "savingThrowForced": [
+        "strength"
+      ],
+      "token": {
+        "name": "Warhorse Skeleton",
+        "source": "MM"
+      },
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              "I Destrieri della Nebbia sono cavalli da guerra che Strahd ha riportato dalla morte. Il loro manto è nero come l'inchiostro, gli occhi ardono di una fiamma viola spettrale. Nitriscono senza suono — la nebbia intorno a loro sembra deformarsi ogni volta che si muovono."
+            ]
+          }
+        ]
+      }
+    }
 	]
 }
