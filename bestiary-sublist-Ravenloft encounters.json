@@ -1,0 +1,57 @@
+{
+	"fileType": "bestiary-sublist",
+	"siteVersion": "2.26.1",
+	"name": "Ravenloft encounters",
+	"saveId": "10f51b9a-eaea-43a9-9663-92ee0537d909",
+	"items": [
+		{
+			"h": "shadow%20demon_mm",
+			"c": 1
+		},
+		{
+			"h": "skeleton_xmm",
+			"c": 1
+		},
+		{
+			"h": "animated%20rug%20of%20smothering_xmm",
+			"c": 1
+		},
+		{
+			"h": "rug%20of%20smothering_mm",
+			"c": 1
+		},
+		{
+			"h": "black%20pudding_xmm",
+			"c": 1
+		},
+		{
+			"h": "ghost_xmm",
+			"c": 1
+		},
+		{
+			"h": "gargoyle_xmm",
+			"c": 1
+		}
+	],
+	"sources": [
+		"MM",
+		"XMM"
+	],
+	"playersSimple": [
+		{
+			"count": 4,
+			"level": 1
+		}
+	],
+	"isAdvanced": false,
+	"colsExtraAdvanced": [],
+	"playersAdvanced": [
+		{
+			"name": "",
+			"level": 1,
+			"extras": [],
+			"extraCols": []
+		}
+	],
+	"customShapeGroups": []
+}
